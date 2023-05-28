@@ -1,0 +1,31 @@
+.teste {
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    background-color: bisque;
+    padding: 35px;
+    text-align: justify;
+}
+
+.teste:after {
+    width:5px;
+    height:60px;
+    position:absolute;
+   
+    top:70%;
+    transition: top, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+        background: linear-gradient(
+        transparent,
+        white,
+        transparent
+    );
+    opacity: 0;
+    }
+
+.teste:hover {
+    top: 25%;
+    opacity: 50%;
+}
